@@ -11,7 +11,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_centerInParent="true"
-        android:onClick="host"/>
+        android:onClick="host"
+        android:backgroundTint="@color/colorPrimary"/>
     <Button
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -21,6 +22,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_centerInParent="true"
-        android:onClick="park"/>
+        android:onClick="park"
+        android:backgroundTint="@color/colorAccent"/>
 
 </RelativeLayout>
