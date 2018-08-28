@@ -10,7 +10,8 @@
         android:id="@+id/host_button"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:onClick="host"/>
     <Button
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -19,6 +20,7 @@
         android:layout_below="@+id/host_button"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:onClick="park"/>
 
 </RelativeLayout>
