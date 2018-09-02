@@ -13,6 +13,11 @@ import com.example.psangule.ultrabakchodi.RegisterActivity
 import com.example.psangule.ultrabakchodi.R
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
+import java.util.logging.Logger.global
+import android.R.id.edit
+import android.content.SharedPreferences
+
+
 
 class LoginActvity : AppCompatActivity() {
 
@@ -51,6 +56,12 @@ class LoginActvity : AppCompatActivity() {
                     startActivity(Intent(this,MainActivity::class.java))
                     this.finish()
                     Toast.makeText(this,"Successfully logged in :)",Toast.LENGTH_LONG).show()
+
+                    //Store email to local
+                    val data = applicationContext.getSharedPreferences("Data", 0)
+                    val editor = data.edit()
+                    editor.putString("email", email)
+
                 }else{
                     Toast.makeText(this,"Error,Login Failed",Toast.LENGTH_LONG).show()
                 }
